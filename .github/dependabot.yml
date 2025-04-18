@@ -1,0 +1,22 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    target-branch: "main"
+    automerge: true
+    automerge-type: "pr"
+    automerge-strategy: "auto"
+    open-pull-requests-limit: 10
+    rebase-strategy: "auto"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+    assignees:
+      - "Dependabot"
+    reviewers:
+      - "castroofelipee"
+    labels:
+      - "dependencies"
+      - "auto-update"
